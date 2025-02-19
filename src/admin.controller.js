@@ -37,11 +37,12 @@ const adminLogin = async (req, res) => {
   // Store token in HTTP-only cookie
   res.cookie("token", token, {
     httpOnly: true,
-    secure:true,
-    sameSite: "none",
-    domain:"https://serene-beignet-c36117.netlify.app",
+    secure: true,
+    sameSite: "None",
+    domain: "serene-beignet-c36117.netlify.app", // Remove "https://"
     maxAge: 60 * 60 * 1000, // 1 hour
   });
+  
 
   res.status(200).json({
     message: "Login successful",
