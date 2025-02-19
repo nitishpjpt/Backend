@@ -15,7 +15,10 @@ const App = () => {
 
     const response = await axios.post(
       "https://backend-ieua.onrender.com/api/v1/login",
-      data
+      data,
+      {
+        withCredentials: true,
+      }
     );
     console.log(response.data);
   };
