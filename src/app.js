@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv"
 import routes from "./routes.js";
+import helmet from "helmet";
 
 const app = express();
 
@@ -15,6 +16,7 @@ app.use(
     credentials: true, // Allow sending cookies with requests
   })
 );
+app.use(helmet());
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 app.use(express.json({ limit: "16kb" }));

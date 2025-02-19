@@ -1,6 +1,7 @@
 import { Admin } from "./admin.modal.js";
 
 
+
 const adminRegister = async (req, res) => {
   const { name, email, password } = req.body;
 
@@ -39,7 +40,7 @@ const adminLogin = async (req, res) => {
     httpOnly: true,
     secure: true,
     sameSite: "None",
-    domain: "serene-beignet-c36117.netlify.app", // Remove "https://"
+    // domain: "serene-beignet-c36117.netlify.app", // Remove "https://"
     maxAge: 60 * 60 * 1000, // 1 hour
   });
   
