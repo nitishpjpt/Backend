@@ -9,7 +9,7 @@ dotenv.config({});
 
 app.use(
   cors({
-    origin: "http://localhost:5173", // React frontend URL
+    origin: "https://serene-beignet-c36117.netlify.app", // React frontend URL
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     allowedHeaders: ["Content-Type"],
     credentials: true, // Allow sending cookies with requests
