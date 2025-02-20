@@ -42,6 +42,7 @@ const adminLogin = async (req, res) => {
     sameSite: "None",
     // domain: "serene-beignet-c36117.netlify.app", // Remove "https://"
     maxAge: 60 * 60 * 1000, // 1 hour
+    signed:true
   });
   
 
