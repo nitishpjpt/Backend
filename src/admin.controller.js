@@ -42,7 +42,6 @@ const adminLogin = async (req, res) => {
     sameSite: "None",
     domain: "netlify.app", 
     maxAge: 60 * 60 * 1000, // 1 hour
-    signed:true,
   });
   
 
