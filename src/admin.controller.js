@@ -40,7 +40,7 @@ const adminLogin = async (req, res) => {
     httpOnly: true,
     secure: true,
     sameSite: "None",
-    domain: "netlify.app", 
+    domain: "serene-beignet-c36117.netlify.app", 
     maxAge: 60 * 60 * 1000, // 1 hour
   });
   
